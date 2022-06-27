@@ -23,7 +23,7 @@ def read_csv(file: str, delim: str):
 
 def load_data(data_folder: str):
   #read files
-  pathway_gene_info = read_csv("data/pathway.csv", ",")
+  pathway_gene_info = read_csv(os.path.join(data_folder, "pathway.csv"), ",")
   pathway_category_info = read_csv(os.path.join(data_folder, "pathway-category.csv"), ",")
 
   #get pathway categories
