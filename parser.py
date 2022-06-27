@@ -38,6 +38,7 @@ def load_data(data_folder: str):
   #create json for pathway/disease
   for row in pathway_gene_info:
     doc = {
+      '_id': f"{row['PATHWAY_ID']}-{row['GENE_ID']}",
       'subject': {
         'GENE_ID': int(row['GENE_ID']),
         'GENE_SYMBOL': row['GENE_SYMBOL']
