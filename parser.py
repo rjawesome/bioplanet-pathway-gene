@@ -53,6 +53,15 @@ def load_data(data_folder: str):
 
     yield doc
 
-# with open("./output.json", "w") as f:
-#   for i in load_data("./data"):
-#     f.write(str(i) + "\n")
+def test():
+  import json
+
+  obj = {'data': []}
+  for i in load_data("./data"):
+    obj['data'].append(i)
+  
+  with open("./output.json", "w") as f:
+    f.write(json.dumps(obj, indent = 2))
+
+if __name__ == '__main__':
+  test()
