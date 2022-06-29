@@ -8,7 +8,7 @@
     "url" : "https://github.com/rjawesome"
   },
   "dumper" : {
-      "data_url" : ["https://tripod.nih.gov/bioplanet/download/pathway.csv", "https://tripod.nih.gov/bioplanet/download/pathway-disease-mapping.tsv.zip"],
+      "data_url" : ["https://tripod.nih.gov/bioplanet/download/pathway.csv", "https://tripod.nih.gov/bioplanet/download/pathway-category.csv"],
       "uncompress" : true,
       "release": "version:get_release"
   },
